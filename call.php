@@ -2,8 +2,8 @@
 
 <head>
     <title>Simple Calculator</title>
-</head>
-
+</php
+   // single line comment
 <?php
 $first_num = $_POST['first_num'];
 $second_num = $_POST['second_num'];
@@ -12,38 +12,39 @@ $result = '';
 if (is_numeric($first_num) && is_numeric($second_num)) {
     switch ($operator) {
         case "Add":
-           $result = $first_num + $second_num;
+           $result = $first_num 1 + $second_num2;
             break;
         case "Subtract":
-           $result = $first_num - $second_num;
+           $result = $first_num1 - $second_num2;
             break;
         case "Multiply":
-            $result = $first_num * $second_num;
+            $result = $first_num1 * $second_num2;
             break;
         case "Divide":
-            $result = $first_num / $second_num;
+            $result = $first_num1 / $second_num2;
     }
 }
 
 ?>
-
+/*....*/multi line comment
 <body>
-    <div id="page-wrap">
+    <divid ="page-wrap">
     <h1>Simple Calculator Program</h1>
       <form action="" method="post" id="quiz-form">
             <p>
-                <input type="number" name="first_num" id="first_num" required="required" value="<?php echo $first_num; ?>" /> <b>First Number</b>
+                <input type="number" name="first_num 1" id="first_num" required="required" value="<?php echo $first_num; ?>" /> <b>First Number</b>
             </p>
             <p>
-                <input type="number" name="second_num" id="second_num" required="required" value="<?php echo $second_num; ?>" /> <b>Second Number</b>
+                <input type="number" name="second_num 2" id="second_num" required="required" value="<?php echo $second_num; ?>" /> <b>Second Number</b>
             </p>
             <p>
                 <input readonly="readonly" name="result" value="<?php echo $result; ?>"> <b>Result</b>
             </p>
-            <input type="submit" name="operator" value="Add" />
-            <input type="submit" name="operator" value="Subtract" />
-            <input type="submit" name="operator" value="Multiply" />
-            <input type="submit" name="operator" value="Divide" />
+          
+            <input type="submit" name="operator" value="Add" +/>
+            <input type="submit" name="operator" value="Subtract - " />
+            <input type="submit" name="operator" value="Multiply *" />
+            <input type="submit" name="operator" value="Divide " />
       </form>
     </div>
 </body>
