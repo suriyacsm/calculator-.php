@@ -3,25 +3,25 @@
 <head>
     <title>Simple Calculator</title>
 </php
-   // single line comment
+   // i am commiting single line comment
 <?php
 $first_num = $_POST['first_num'];
 $second_num = $_POST['second_num'];
 $operator = $_POST['operator'];
-$result = '';
+$output = '';
 if (is_numeric($first_num) && is_numeric($second_num)) {
     switch ($operator) {
-        case "Add":
+        case "Addition":
            $result = $first_num 1 + $second_num2;
             break;
         case "Subtract":
-           $result = $first_num1 - $second_num2;
+           $output = $first_num1 - $second_num2;
             break;
         case "Multiply":
-            $result = $first_num1 * $second_num2;
+            $output = $first_num1 * $second_num2;
             break;
         case "Divide":
-            $result = $first_num1 / $second_num2;
+            $output = $first_num1 / $second_num2;
     }
 }
 
@@ -38,7 +38,7 @@ if (is_numeric($first_num) && is_numeric($second_num)) {
                 <input type="number" name="second_num 2" id="second_num" required="required" value="<?php echo $second_num; ?>" /> <b>Second Number</b>
             </p>
             <p>
-                <input readonly="readonly" name="result" value="<?php echo $result; ?>"> <b>Result</b>
+                <input readonly="readonly" name="output" value="<?php echo $output; ?>"> <b>output</b>
             </p>
           
             <input type="submit" name="operator" value="Add" +/>
